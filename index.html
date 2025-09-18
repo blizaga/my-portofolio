@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fariz Al Mustaqim — AI Engineer</title>
+  <meta name="description" content="Portofolio AI Engineer: NLP, CV, LLM/RAG, FastAPI microservices.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="Fariz Al Mustaqim — AI Engineer" />
+  <meta property="og:description" content="Portofolio AI Engineer: NLP, CV, LLM/RAG, FastAPI microservices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-cover.png" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+  <script defer src="assets/script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row space-between">
+      <a href="#home" class="brand">Fariz <span>Al Mustaqim</span></a>
+      <nav class="nav">
+        <a data-i18n="nav_about" href="#about">Tentang</a>
+        <a data-i18n="nav_exp" href="#experience">Pengalaman</a>
+        <a data-i18n="nav_projects" href="#projects">Projek</a>
+        <a data-i18n="nav_skills" href="#skills">Keahlian</a>
+        <a data-i18n="nav_edu" href="#education">Pendidikan</a>
+        <a data-i18n="nav_contact" href="#contact">Kontak</a>
+        <div class="toggles">
+          <button id="themeToggle" aria-label="Toggle theme">🌓</button>
+          <div class="lang-switch">
+            <button class="lang" data-lang="en">EN</button>
+            <span>│</span>
+            <button class="lang" data-lang="id">ID</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <h1 data-i18n="hero_title">AI Engineer</h1>
+          <p data-i18n="hero_lead" class="lead">
+            Menghadirkan solusi AI yang dapat diskalakan—NLP, Computer Vision, dan LLM—
+            dengan fokus pada kemudahan operasional, reliabilitas, dan dampak bisnis.
+          </p>
+          <div class="cta">
+            <a class="btn primary" href="#projects" data-i18n="cta_projects">Lihat Projek</a>
+            <a class="btn ghost" href="#contact" data-i18n="cta_contact">Hubungi Saya</a>
+          </div>
+          <ul class="meta">
+            <li>Yogyakarta, Indonesia</li>
+            <li><a href="mailto:farizalmustaqim45@gmail.com">farizalmustaqim45@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/fariz-al-mustaqim/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/blizaga" target="_blank" rel="noopener">GitHub</a></li>
+          </ul>
+        </div>
+        <div class="hero-photo">
+          <img id="profilePhoto" src="assets/Foto_Portofolio.jpg" alt="Foto Fariz Al Mustaqim">
+          <!--<small class="muted" data-i18n="photo_hint">Untuk mengganti foto: unggah <b>assets/Foto_Portofolio.jpg</b> (format .jpg/.png) via File Manager cPanel.</small>-->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 data-i18n="about_title">Tentang Saya</h2>
+      <p data-i18n="about_p1">
+        Saya adalah AI Engineer dengan pengalaman 2+ tahun membangun dan mengoperasikan sistem AI end‑to‑end.
+        Keahlian: arsitektur microservice FastAPI, integrasi LLM & RAG (Qdrant/Elasticsearch), dan optimisasi inferensi (quantization, distillation).
+      </p>
+      <p data-i18n="about_p2" class="muted">
+        Rekam jejak: agen modular (OCR Correction, Daily Summary, Analytical, Conversational), sentiment API production (gRPC + monitoring/logging),
+        fine‑tuning Qwen3‑0.6B untuk ringkasan Bahasa Indonesia, dan pipeline CV (OpenCV/YOLO) untuk analitik audiens.
+      </p>
+      <div class="chips">
+        <span class="chip">FastAPI</span><span class="chip">Qdrant</span><span class="chip">Elasticsearch</span>
+        <span class="chip">Transformers</span><span class="chip">PyTorch</span><span class="chip">OpenCV</span>
+        <span class="chip">LLM/RAG</span><span class="chip">Docker</span>
+      </div>
+    </section>
+
+    <section id="experience" class="section container">
+      <h2 data-i18n="exp_title">Pengalaman Kerja</h2>
+      <div class="cards">
+        <article class="card">
+          <header>
+            <h3>AI Engineer — PT. Nestech Group (Binokular Media Utama)</h3>
+            <div class="sub">Yogyakarta • Feb 2023 – Sekarang</div>
+          </header>
+          <ul>
+            <li data-i18n="exp_binokular_1">Merancang & menerapkan AI Agent modular (FastAPI) untuk otomasi dokumen, monitoring media, konten, dan pelaporan.</li>
+            <li data-i18n="exp_binokular_2">SEO Content Agent (multibahasa) dan Daily Summary Agent (laporan tren).</li>
+            <li data-i18n="exp_binokular_3">Integrasi Qdrant + RAG untuk pencarian semantik & analitik.</li>
+            <li data-i18n="exp_binokular_4">Fine‑tuning Qwen3‑0.6B (ringkas Bahasa Indonesia), sentiment API production (gRPC, monitoring/logging).</li>
+            <li data-i18n="exp_binokular_5">Optimisasi resource (quantization, distillation), OCR + CV (OpenCV/YOLO) untuk analitik audiens.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Freelancer — Upwork</h3>
+            <div class="sub">Remote (Netherlands) • Mei 2025 – Sekarang</div>
+          </header>
+          <ul>
+            <li data-i18n="exp_upwork_1">Delivery microservice FastAPI & solusi AI production untuk e‑commerce, konten, dan analitik.</li>
+            <li data-i18n="exp_upwork_2">Custom AI agent untuk SEO content automation (multibahasa), chat history analytics API, recipe/content agent.</li>
+            <li data-i18n="exp_upwork_3">Integrasi FastAPI + MySQL + cloud deployment; otomasi workflow.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Freelance AI Engineer — PT. Cloufina Nata Karya</h3>
+            <div class="sub">Yogyakarta • Sep 2024 – Jun 2025</div>
+          </header>
+          <ul>
+            <li data-i18n="exp_cloufina_1">Face login liveness detection (multi‑faktor) di FastAPI untuk keamanan & anti‑spoofing.</li>
+            <li data-i18n="exp_cloufina_2">Customer scoring engine & RAG document insight chatbot (FastAPI + Qdrant/Elasticsearch).</li>
+            <li data-i18n="exp_cloufina_3">Hotel FAQ/booking chatbot (latensi rendah, pengalaman lebih baik).</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Jr. Data Scientist — PT. Central Artificial Intelligence</h3>
+            <div class="sub">Jakarta • Agu 2022 – Des 2022</div>
+          </header>
+          <ul>
+            <li data-i18n="exp_cai_1">Model rekomendasi konten (Bisa AI Academy) untuk engagement & discovery.</li>
+            <li data-i18n="exp_cai_2">Chatbot Botpress & integrasi API model ML client‑server.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 data-i18n="proj_title">Projek Terpilih</h2>
+      <div class="grid">
+        <article class="tile">
+          <h3>Omniguard Agent (Multi‑Agent)</h3>
+          <p data-i18n="proj_omni">Modular 9‑agent suite; includes SEO content generation, daily summaries, and OCR correction—unified under a production‑ready multi‑agent orchestration.</p>
+          <div class="tags"><span>CrewAI</span><span>Ollama</span><span>PostgreSQL</span><span>Qdrant</span><span>Elasticsearch</span></div>
+        </article>
+        <article class="tile">
+          <h3>Sentiment Analysis API</h3>
+          <p data-i18n="proj_sentiment">Production sentiment‑analysis API using Transformers (gRPC + monitoring/logging), low‑latency, multilingual.</p>
+          <div class="tags"><span>Transformers</span><span>gRPC</span><span>FastAPI</span></div>
+        </article>
+        <article class="tile">
+          <h3>News Category Classifier</h3>
+          <p data-i18n="proj_newsclf">News category classification: multi‑topic (e.g., business, sports, technology).</p>
+          <div class="tags"><span>NLP</span><span>Text Classification</span><span>gRPC</span><span>Transformers</span></div>
+        </article>
+        <article class="tile">
+          <h3>n8n Data Insight Automation</h3>
+          <p data-i18n="proj_n8n">Analytics automation: AI chatbot integrated with internal services to derive insights from Qdrant data (multi‑step workflow).</p>
+          <div class="tags"><span>n8n</span><span>FastAPI</span><span>Qdrant</span></div>
+        </article>
+        <article class="tile">
+          <h3>RAG Document Insight Chatbot</h3>
+          <p data-i18n="proj_rag">Document‑aware conversational assistant (RAG) for fast, accurate answers.</p>
+          <div class="tags"><span>FastAPI</span><span>Qdrant</span><span>Elasticsearch</span></div>
+        </article>
+        <article class="tile">
+          <h3>Face Liveness Detection</h3>
+          <p data-i18n="proj_face">Secure authentication with multi‑factor verification; reduces spoofing.</p>
+          <div class="tags"><span>OpenCV</span><span>Deep Learning</span><span>FastAPI</span></div>
+        </article>
+        <article class="tile">
+          <h3>Virtual Item Transaction System</h3>
+          <p data-i18n="proj_virtual_items">Virtual‑item transaction system integrated with a payment gateway and WhatsApp chatbot for notifications/support—designed to follow platform policies and payment compliance.</p>
+          <div class="tags"><span>FastAPI</span><span>Payment Gateway</span><span>WhatsApp</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 data-i18n="skills_title">Keahlian</h2>
+      <div class="skills">
+        <div>
+          <h4 data-i18n="skills_lang">Bahasa & Framework</h4>
+          <p>Python, FastAPI, JavaScript; PyTorch, TensorFlow, Transformers, OpenCV, YOLO.</p>
+        </div>
+        <div>
+          <h4 data-i18n="skills_platform">Platform & Data</h4>
+          <p>Qdrant, Elasticsearch, PostgreSQL/MySQL, Docker, gRPC, GitHub Actions.</p>
+        </div>
+        <div>
+          <h4 data-i18n="skills_focus">Fokus</h4>
+          <p>LLM/RAG, NLP, Computer Vision, Agentic systems, Model optimization (quantization, distillation).</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <h2 data-i18n="edu_title">Pendidikan & Organisasi</h2>
+      <ul class="list">
+        <li data-i18n="edu_uny">S1 Pendidikan Teknik Mekatronika — Universitas Negeri Yogyakarta (IPK 3.57), 2018–2023</li> 
+        <li data-i18n="edu_uny_robotik">Tim Robotik UNY (2018–2022), Mahasiswa Berprestasi (2020–2022), </li>
+        <li data-i18n="edu_pkm">PKM‑KC 2021 Autonomous Smart Vehicle.</li>
+        <li data-i18n="edu_orbit">Orbit Future Academy (2022): TensorFlow, Computer Vision, LSTM untuk deret waktu.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 data-i18n="contact_title">Kontak</h2>
+      <p data-i18n="contact_desc">Terbuka untuk kolaborasi atau freelance malam & akhir pekan. Silakan hubungi saya:</p>
+      <form id="contactForm" class="contact-form" method="POST" novalidate>
+        <input type="text" name="name" placeholder="Nama / Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="subject" placeholder="Subjek / Subject" />
+        <textarea name="message" placeholder="Pesan / Message" rows="6" required></textarea>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+        <button type="submit" class="btn primary">Kirim</button>
+        <p id="formStatus" class="muted" style="margin-top:.6rem"></p>
+      </form>
+      <ul class="list">
+        <li>Email: <a href="mailto:farizalmustaqim45@gmail.com">farizalmustaqim45@gmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/6285601893770" target="_blank" rel="noopener">+62 856-0189-3770</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/fariz-al-mustaqim/" target="_blank" rel="noopener">/fariz-al-mustaqim/</a></li>
+        <li>GitHub: <a href="https://github.com/blizaga" target="_blank" rel="noopener">@blizaga</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container row space-between">
+      <small>© 2025 Fariz Al Mustaqim. All rights reserved.</small>
+    </div>
+  </footer>
+</body>
+</html>
