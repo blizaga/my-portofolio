@@ -137,8 +137,8 @@ function applyLang(lang){
     localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
   });
 
-  // language init
-  const savedLang = localStorage.getItem('lang') || 'id';
+  // language init (default to English)
+  const savedLang = localStorage.getItem('lang') || 'en';
   applyLang(savedLang);
   document.querySelectorAll('.lang').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
@@ -164,26 +164,26 @@ function applyLang(lang){
     const status = document.getElementById('formStatus');
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      status.textContent = (localStorage.getItem('lang') || 'id') === 'en' ? 'Sending...' : 'Mengirim...';
+      status.textContent = (localStorage.getItem('lang') || 'en') === 'en' ? 'Sending...' : 'Mengirim...';
       const data = new FormData(form);
       if(!FORM_ENDPOINT){
         const name = encodeURIComponent(data.get('name') || '');
         const subj = encodeURIComponent(data.get('subject') || 'Contact from portfolio');
         const body = encodeURIComponent(`Nama: ${name}\\nEmail: ${data.get('email')}\\n\\n${data.get('message')}`);
         window.location.href = `mailto:farizalmustaqim45@gmail.com?subject=${subj}&body=${body}`;
-        status.textContent = (localStorage.getItem('lang') || 'id') === 'en' ? 'Opening email client...' : 'Membuka aplikasi email...';
+        status.textContent = (localStorage.getItem('lang') || 'en') === 'en' ? 'Opening email client...' : 'Membuka aplikasi email...';
         return;
       }
       try {
         const res = await fetch(FORM_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' }});
         if(res.ok){
           form.reset();
-          status.textContent = (localStorage.getItem('lang') || 'id') === 'en' ? 'Message sent. Thank you!' : 'Pesan terkirim. Terima kasih!';
+          status.textContent = (localStorage.getItem('lang') || 'en') === 'en' ? 'Message sent. Thank you!' : 'Pesan terkirim. Terima kasih!';
         } else {
-          status.textContent = (localStorage.getItem('lang') || 'id') === 'en' ? 'Failed to send. Please try again later.' : 'Gagal mengirim. Coba lagi nanti.';
+          status.textContent = (localStorage.getItem('lang') || 'en') === 'en' ? 'Failed to send. Please try again later.' : 'Gagal mengirim. Coba lagi nanti.';
         }
       } catch {
-        status.textContent = (localStorage.getItem('lang') || 'id') === 'en' ? 'Network error.' : 'Terjadi kesalahan jaringan.';
+        status.textContent = (localStorage.getItem('lang') || 'en') === 'en' ? 'Network error.' : 'Terjadi kesalahan jaringan.';
       }
     });
   }
