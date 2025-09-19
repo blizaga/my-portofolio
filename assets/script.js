@@ -157,6 +157,18 @@ function applyLang(lang){
     });
   });
 
+  // Close mobile nav after clicking a link
+  const navCheck = document.getElementById('navCheck');
+  if(navCheck){
+    document.querySelectorAll('.nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if(window.matchMedia('(max-width: 768px)').matches){
+          navCheck.checked = false;
+        }
+      });
+    });
+  }
+
   // Contact form (Formspree-compatible, mailto fallback)
   const FORM_ENDPOINT = ""; // e.g., "https://formspree.io/f/xxxxabcd"
   const form = document.getElementById('contactForm');
